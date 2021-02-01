@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cafe House - Contact Info.</title>
+  <title>Contact</title>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/templatemo-style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link href="images/favi.ico" rel="icon" type="image/x-icon">
 
 
   </head>
@@ -28,7 +28,7 @@
         <div class="row">
           <div class="tm-top-header-inner">
             <div class="tm-logo-container">
-              <a href = "index.html"> <img src="images/expandable.jpg" alt="Logo" class="tm-site-logo"style="width:50px;height:50px;"></a>              <h1 class="tm-site-name ">Title?</h1>
+              <a href = "index.html"> <img src="images/expandable.jpg" alt="Logo" class="tm-site-logo"style="width:50px;height:50px;"></a><h1 class="tm-site-name "></h1>
             </div>
             <div class="mobile-menu-icon">
               <i class="fa fa-bars"></i>
@@ -48,31 +48,44 @@
     </div>
     <div class="tm-main-section light-gray-bg">
       <div class="container" id="main">
-        <section class="tm-section row">
-          <h2 class="col-lg-12 margin-bottom-30">Send us a message</h2>
-          <form action="#" method="post" class="tm-contact-form">
-            <div class="col-lg-6 col-md-6">
-              <div class="form-group">
-                <input type="text" id="contact_name" class="form-control" placeholder="NAME" />
+        <div class="fcf-body">
+
+          <div id="fcf-form">
+          <h3 class="fcf-h3">Contact us</h3>
+      
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+              
+              <div class="fcf-form-group">
+                  <label for="Name" class="fcf-label">Your name</label>
+                  <div class="fcf-input-group">
+                      <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                  </div>
               </div>
-              <div class="form-group">
-                <input type="email" id="contact_email" class="form-control" placeholder="EMAIL" />
+      
+              <div class="fcf-form-group">
+                  <label for="Email" class="fcf-label">Your email address</label>
+                  <div class="fcf-input-group">
+                      <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                  </div>
               </div>
-              <div class="form-group">
-                <input type="text" id="contact_subject" class="form-control" placeholder="SUBJECT" />
+      
+              <div class="fcf-form-group">
+                  <label for="Message" class="fcf-label">Your message</label>
+                  <div class="fcf-input-group">
+                      <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                  </div>
               </div>
-              <div class="form-group">
-                <textarea id="contact_message" class="form-control" rows="6" placeholder="MESSAGE"></textarea>
+      
+              <div class="fcf-form-group">
+                  <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
               </div>
-              <div class="form-group">
-                <button class="tm-more-button" type="submit" name="submit">Send message</button> 
-              </div>               
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div id="google-map"></div>
-            </div> 
+      
+              
+      
           </form>
-        </section>
+          </div>
+      
+      </div>
       </div>
     </div> 
     <footer>
@@ -99,11 +112,11 @@
               
               <div class="tm-social-icons-container">
                 <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-discord" aria-hidden="true"></i></a>
+                <a href="https://discord.com/invite/EXgWX8XRsv" class="tm-social-icon"><i class="fa fa-discord" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/ExpandableGG" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.youtube.com/channel/UCq_DCgITBAqnKU_AJR2yPew" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-twitch" aria-hidden="false"></i></a>
+                <a href="https://www.instagram.com/expandablegg/?hl=en" class="tm-social-icon"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.twitch.tv/expandabletv" class="tm-social-icon"><i class="fa fa-twitch" aria-hidden="false"></i></a>
               </div>
             </div>
           </div>          
@@ -112,7 +125,7 @@
       <div>
         <div class="container">
           <div class="row tm-copyright">
-           <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2084 Your Cafe House</p>
+           <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2021 Expandable</p>
          </div>  
        </div>
      </div>
