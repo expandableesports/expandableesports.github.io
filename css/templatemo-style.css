@@ -95,7 +95,7 @@
     width: 51%;
     height: 100%;
     background: #222222;
-    z-index: 1000;
+   
     -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(0);  /* IE 9 */
     transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
@@ -151,7 +151,7 @@ ul {
   padding: 0;
 }
 * { font-family: 'Open Sans', sans-serif; }
-.container { max-width: 960px; }
+.container { max-width: 900px; }
 .tm-handwriting-font { font-family: 'Damion', cursive; }
 .tm-top-header {
   
@@ -298,13 +298,14 @@ ul {
           justify-content: space-between;
   width: 100%;
 }
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   position: center;
   background-color: transparent;
-  width: 500px;
-  height: 200px;
-  
+  width: 450px;
+  height: 300px;
+  float: left;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -332,10 +333,14 @@ ul {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
+@media screen and (max-width: 600px) {
+  .flip-card {
+     width: 80%;
+  }
+}
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
@@ -347,7 +352,7 @@ ul {
 }
 /* Main content */
 .light-gray-bg { background-color: #e4e4e4; }
-.tm-main-section { padding-top: 170px; }
+.tm-main-section { padding-top: 100px; }
 .img-thumbnail { padding: 8px; }
 .inline-block { display: inline-block; }
 .shadow-img {
