@@ -304,7 +304,7 @@ ul {
   position: center;
   background-color: transparent;
   width: 450px;
-  height: 300px;
+  height: 30 0px;
   float: left;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -346,7 +346,7 @@ ul {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #505050;
+  background-color: rgb(60, 202, 88);
   color: white;
   transform: rotateY(180deg);
 }
