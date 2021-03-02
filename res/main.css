@@ -1146,8 +1146,8 @@ p span {
 .home {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-  background-color: #34db3c;
-  background-color: rgba(154, 163, 149, 0.753);
+  
+  background-color: rgba(154, 163, 149, 0);
 }
 /* line 8, ../sass/partials/_slides.sass */
 .home.full-color {
