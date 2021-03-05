@@ -53,7 +53,8 @@
       <div class="container" id="main">
         <!-- form.123formbuilder.com script begins here --><script type="text/javascript" defer src="https://form.123formbuilder.com/embed/5836484.js" data-role="form" data-default-width="650px"></script><!-- form.123formbuilder.com script ends here -->
         
-    </div> 
+      </div> 
+    </div>
     <footer>
       <div class="tm-black-bg">
         <div class="container">
@@ -95,48 +96,11 @@
    <!-- JS -->
    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
    <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
-   <script>
-      /* Google map
-      ------------------------------------------------*/
-      var map = '';
-      var center;
+   
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.backstretch.min.js"></script>
+  <script src="scripts.js"></script>
 
-      function initialize() {
-        var mapOptions = {
-          zoom: 16,
-          center: new google.maps.LatLng(13.758468,100.567481),
-          scrollwheel: false
-        };
-        
-        map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-
-        google.maps.event.addDomListener(map, 'idle', function() {
-          calculateCenter();
-        });
-        
-        google.maps.event.addDomListener(window, 'resize', function() {
-          map.setCenter(center);
-        });
-      }
-
-      function calculateCenter() {
-        center = map.getCenter();
-      }
-
-      function loadGoogleMap(){
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-        document.body.appendChild(script);
-      }
-      $(document).ready(function(){                
-        loadGoogleMap();                
-      });
-      </script>
-      <script src="assets/js/jquery-1.11.1.min.js"></script>
-      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/js/jquery.backstretch.min.js"></script>
-      <script src="scripts.js"></script>
-
-    </body>
-    </html>
+</body>
+</html>
