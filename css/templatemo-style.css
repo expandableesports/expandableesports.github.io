@@ -346,7 +346,7 @@ ul {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #505050;
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
 }
@@ -363,7 +363,7 @@ ul {
 
 /* Footer */
 .tm-black-bg {
-  background-color: #302f2f;
+  background-color: black;
   color: white;
   padding-top: 50px;
 }
@@ -392,7 +392,7 @@ ul {
   margin-bottom: 30px;
 }
 .tm-social-icon {
-  background-color: #505050;
+  background-color:black;
   color: white;
   display: inline-block;
   font-size: 20px;
